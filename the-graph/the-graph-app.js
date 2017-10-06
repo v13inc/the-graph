@@ -131,7 +131,7 @@ module.exports.register = function (context) {
     return null;
   }
 
-  TheGraph.App = React.createFactory( React.createClass({
+  TheGraph.App = React.createClass({
     displayName: "TheGraphApp",
     mixins: mixins,
     getDefaultProps: function() {
@@ -676,7 +676,7 @@ module.exports.register = function (context) {
       containerOptions.className += " " + scaleClass;
       return TheGraph.factories.app.createAppContainer.call(this, containerOptions, appContents);
     }
-  }));
+  });
 
 
 };
